@@ -1,3 +1,5 @@
+theme: minima
+
 collections:
   cha:
     output: true
