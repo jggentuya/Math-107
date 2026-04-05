@@ -1,4 +1,5 @@
 ---
+layout: default
 subject: Math 107
 BookTitle:
   - Chartrand, G., et al. (201i8). Mathematical proofs (4th ed.). Pearson Education.
