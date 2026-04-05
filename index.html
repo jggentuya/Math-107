@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math 107 – Exercise Solutions</title>
+  <style>
+    /* ── Reset & base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+      color: #fff;
+      padding: 2.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.2rem; letter-spacing: 1px; }
+    header p  { font-size: 1rem; margin-top: .5rem; opacity: .85; }
+
+    /* ── Navigation ── */
+    nav {
+      background: #283593;
+      padding: .6rem 1.5rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: #c5cae9;
+      text-decoration: none;
+      margin: 0 .8rem;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: color .2s;
+    }
+    nav a:hover { color: #fff; }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.2rem 3rem;
+    }
+
+    /* ── Section cards ── */
+    section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.08);
+      padding: 2rem 2.2rem;
+      margin-bottom: 2.5rem;
+    }
+    section h2 {
+      font-size: 1.45rem;
+      color: #1a237e;
+      border-bottom: 3px solid #3949ab;
+      padding-bottom: .45rem;
+      margin-bottom: 1.4rem;
+    }
+
+    /* ── Exercise blocks ── */
+    .exercise {
+      border: 1px solid #e8eaf6;
+      border-radius: 8px;
+      margin-bottom: 1.6rem;
+      overflow: hidden;
+    }
+    .exercise-header {
+      background: #e8eaf6;
+      padding: .7rem 1.2rem;
+      font-weight: 700;
+      font-size: .95rem;
+      color: #283593;
+    }
+    .exercise-body { padding: 1.1rem 1.3rem; }
+
+    .problem { margin-bottom: .8rem; }
+    .problem strong { color: #333; }
+
+    .solution {
+      background: #f1f8e9;
+      border-left: 4px solid #558b2f;
+      border-radius: 0 6px 6px 0;
+      padding: .9rem 1.1rem;
+      margin-top: .6rem;
+    }
+    .solution .label {
+      font-weight: 700;
+      color: #33691e;
+      margin-bottom: .3rem;
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* ── Step-by-step ── */
+    .steps { padding-left: 1.4rem; }
+    .steps li { margin-bottom: .35rem; }
+
+    /* ── Math expressions ── */
+    .math {
+      font-family: "Courier New", Courier, monospace;
+      background: #ede7f6;
+      padding: .1rem .45rem;
+      border-radius: 4px;
+      font-size: .97em;
+      color: #4527a0;
+    }
+
+    .answer {
+      margin-top: .7rem;
+      font-weight: 700;
+      color: #2e7d32;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-size: .83rem;
+      color: #666;
+      padding: 1.5rem;
+      border-top: 1px solid #ddd;
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Math 107 – Exercise Solutions</h1>
+  <p>College Algebra &amp; Pre-Calculus · Step-by-step worked examples</p>
+</header>
+
+<nav>
+  <a href="#linear">Linear Equations</a>
+  <a href="#quadratic">Quadratic Equations</a>
+  <a href="#functions">Functions</a>
+  <a href="#exponential">Exponential &amp; Logarithms</a>
+  <a href="#systems">Systems of Equations</a>
+</nav>
+
+<main>
+
+  <!-- ══════════════════════════════════════
+       SECTION 1 – LINEAR EQUATIONS
+  ═════════════════════════════════════════ -->
+  <section id="linear">
+    <h2>1 · Linear Equations</h2>
+
+    <!-- Exercise 1.1 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 1.1</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve for <span class="math">x</span>:</strong>
+          <span class="math">3x − 7 = 14</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Add 7 to both sides: <span class="math">3x = 21</span></li>
+            <li>Divide both sides by 3: <span class="math">x = 7</span></li>
+          </ol>
+          <div class="answer">Answer: x = 7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 1.2 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 1.2</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve for <span class="math">x</span>:</strong>
+          <span class="math">2(x + 4) = 3x − 1</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Distribute: <span class="math">2x + 8 = 3x − 1</span></li>
+            <li>Subtract <span class="math">2x</span> from both sides: <span class="math">8 = x − 1</span></li>
+            <li>Add 1 to both sides: <span class="math">x = 9</span></li>
+          </ol>
+          <div class="answer">Answer: x = 9</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 1.3 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 1.3</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Find the slope and y-intercept of:</strong>
+          <span class="math">4x − 2y = 8</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Solve for <span class="math">y</span>: subtract <span class="math">4x</span> → <span class="math">−2y = −4x + 8</span></li>
+            <li>Divide by <span class="math">−2</span>: <span class="math">y = 2x − 4</span></li>
+            <li>Slope <span class="math">m = 2</span>, y-intercept <span class="math">b = −4</span></li>
+          </ol>
+          <div class="answer">Answer: slope = 2, y-intercept = −4</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 2 – QUADRATIC EQUATIONS
+  ═════════════════════════════════════════ -->
+  <section id="quadratic">
+    <h2>2 · Quadratic Equations</h2>
+
+    <!-- Exercise 2.1 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 2.1 – Factoring</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve by factoring:</strong>
+          <span class="math">x² + 5x + 6 = 0</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Find two numbers that multiply to 6 and add to 5: <span class="math">2</span> and <span class="math">3</span></li>
+            <li>Factor: <span class="math">(x + 2)(x + 3) = 0</span></li>
+            <li>Set each factor to zero: <span class="math">x + 2 = 0</span> or <span class="math">x + 3 = 0</span></li>
+          </ol>
+          <div class="answer">Answer: x = −2 or x = −3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 2.2 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 2.2 – Quadratic Formula</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve using the quadratic formula:</strong>
+          <span class="math">2x² − 4x − 6 = 0</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Identify <span class="math">a = 2</span>, <span class="math">b = −4</span>, <span class="math">c = −6</span></li>
+            <li>Compute discriminant: <span class="math">Δ = b² − 4ac = 16 + 48 = 64</span></li>
+            <li>Apply formula: <span class="math">x = (4 ± 8) / 4</span></li>
+            <li>Solutions: <span class="math">x = 3</span> or <span class="math">x = −1</span></li>
+          </ol>
+          <div class="answer">Answer: x = 3 or x = −1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 2.3 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 2.3 – Completing the Square</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve by completing the square:</strong>
+          <span class="math">x² + 6x − 7 = 0</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Move constant: <span class="math">x² + 6x = 7</span></li>
+            <li>Add <span class="math">(6/2)² = 9</span> to both sides: <span class="math">x² + 6x + 9 = 16</span></li>
+            <li>Factor left side: <span class="math">(x + 3)² = 16</span></li>
+            <li>Take square root: <span class="math">x + 3 = ±4</span></li>
+          </ol>
+          <div class="answer">Answer: x = 1 or x = −7</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 3 – FUNCTIONS
+  ═════════════════════════════════════════ -->
+  <section id="functions">
+    <h2>3 · Functions</h2>
+
+    <!-- Exercise 3.1 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 3.1 – Domain &amp; Range</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Find the domain of:</strong>
+          <span class="math">f(x) = √(x − 3)</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>The expression under the radical must be non-negative.</li>
+            <li>Set <span class="math">x − 3 ≥ 0</span></li>
+            <li>Solve: <span class="math">x ≥ 3</span></li>
+          </ol>
+          <div class="answer">Answer: Domain = [3, ∞)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 3.2 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 3.2 – Function Composition</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Given <span class="math">f(x) = 2x + 1</span> and <span class="math">g(x) = x²</span>, find <span class="math">(f ∘ g)(3)</span>.</strong>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>First evaluate <span class="math">g(3) = 3² = 9</span></li>
+            <li>Then evaluate <span class="math">f(g(3)) = f(9) = 2(9) + 1 = 19</span></li>
+          </ol>
+          <div class="answer">Answer: (f ∘ g)(3) = 19</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 3.3 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 3.3 – Inverse Functions</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Find the inverse of:</strong>
+          <span class="math">f(x) = 3x − 5</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Replace <span class="math">f(x)</span> with <span class="math">y</span>: <span class="math">y = 3x − 5</span></li>
+            <li>Swap <span class="math">x</span> and <span class="math">y</span>: <span class="math">x = 3y − 5</span></li>
+            <li>Solve for <span class="math">y</span>: <span class="math">y = (x + 5) / 3</span></li>
+          </ol>
+          <div class="answer">Answer: f⁻¹(x) = (x + 5) / 3</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 4 – EXPONENTIAL & LOGARITHMS
+  ═════════════════════════════════════════ -->
+  <section id="exponential">
+    <h2>4 · Exponential &amp; Logarithmic Functions</h2>
+
+    <!-- Exercise 4.1 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 4.1 – Exponential Equation</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve:</strong>
+          <span class="math">2^(x+1) = 16</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Write 16 as a power of 2: <span class="math">16 = 2⁴</span></li>
+            <li>Set exponents equal: <span class="math">x + 1 = 4</span></li>
+            <li>Solve: <span class="math">x = 3</span></li>
+          </ol>
+          <div class="answer">Answer: x = 3</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 4.2 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 4.2 – Logarithmic Equation</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve:</strong>
+          <span class="math">log₂(x − 1) = 4</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Rewrite in exponential form: <span class="math">x − 1 = 2⁴ = 16</span></li>
+            <li>Solve: <span class="math">x = 17</span></li>
+          </ol>
+          <div class="answer">Answer: x = 17</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 4.3 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 4.3 – Natural Logarithm</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve:</strong>
+          <span class="math">e^(2x) = 5</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Take the natural log of both sides: <span class="math">ln(e^(2x)) = ln(5)</span></li>
+            <li>Simplify left side: <span class="math">2x = ln(5)</span></li>
+            <li>Divide by 2: <span class="math">x = ln(5) / 2 ≈ 0.805</span></li>
+          </ol>
+          <div class="answer">Answer: x = ln(5) / 2 ≈ 0.805</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECTION 5 – SYSTEMS OF EQUATIONS
+  ═════════════════════════════════════════ -->
+  <section id="systems">
+    <h2>5 · Systems of Equations</h2>
+
+    <!-- Exercise 5.1 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 5.1 – Substitution Method</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve the system:</strong><br />
+          <span class="math">y = 2x + 1</span><br />
+          <span class="math">3x + y = 16</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Substitute <span class="math">y = 2x + 1</span> into the second equation: <span class="math">3x + (2x + 1) = 16</span></li>
+            <li>Simplify: <span class="math">5x + 1 = 16</span> → <span class="math">5x = 15</span> → <span class="math">x = 3</span></li>
+            <li>Back-substitute: <span class="math">y = 2(3) + 1 = 7</span></li>
+          </ol>
+          <div class="answer">Answer: x = 3, y = 7</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 5.2 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 5.2 – Elimination Method</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Solve the system:</strong><br />
+          <span class="math">2x + 3y = 12</span><br />
+          <span class="math">4x − 3y = 6</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Add the two equations to eliminate <span class="math">y</span>: <span class="math">6x = 18</span></li>
+            <li>Solve: <span class="math">x = 3</span></li>
+            <li>Substitute into the first equation: <span class="math">6 + 3y = 12</span> → <span class="math">3y = 6</span> → <span class="math">y = 2</span></li>
+          </ol>
+          <div class="answer">Answer: x = 3, y = 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercise 5.3 -->
+    <div class="exercise">
+      <div class="exercise-header">Exercise 5.3 – No Solution</div>
+      <div class="exercise-body">
+        <div class="problem">
+          <strong>Determine the number of solutions:</strong><br />
+          <span class="math">2x + y = 4</span><br />
+          <span class="math">4x + 2y = 10</span>
+        </div>
+        <div class="solution">
+          <div class="label">Solution</div>
+          <ol class="steps">
+            <li>Multiply the first equation by 2: <span class="math">4x + 2y = 8</span></li>
+            <li>Compare with the second equation: <span class="math">4x + 2y = 10</span></li>
+            <li>Left sides are identical but right sides differ (8 ≠ 10) — contradiction.</li>
+          </ol>
+          <div class="answer">Answer: No solution (inconsistent system)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Math 107 Exercise Solutions &mdash; hosted via
+  <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+</footer>
+
+</body>
+</html>
