@@ -1,3 +1,11 @@
 collections:
   cha:
     output: true
+    permalink: /:collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "cha"
+    values:
+      layout: "default"
